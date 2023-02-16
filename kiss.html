@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>topologia de rede</title>
+</head>
+<body>
+
+
+    <h1>Topologia</h1>
+    <p>É um sistema que demonstra como os hosts estão conectados na rede.</p>
+    <h1>O que é topologia de redes?</h1>
+    <p>Existem alguns modelos que pode sistematizar a conexão de cada host.</p>
+    <h1>Existem dois tipos de topologia de rede:</h1>
+    <p>Topologia Física: Demonstra de fato como os hosts estão dispostos no ambiente físico.</p>
+    <p>Topologia Lógica: Demonstra a forma como os dados são transmitidos na rede.</p>
+    <h1>Benefícios e desvantagens de cada Topologia:</h1>
+    <p>Barramento: Todos os hosts estão conectados ao mesmo meio físico, embora os dados não circulem dentro de cada um de nós</p>
+    <h1>Benefícios:</h1>
+    <p>Utilizam poucos cabos; sua instalação é simples, seus meios físicos são mais baratos.</p>
+    <p>Simples e confiável.</p>
+    <p>Topologia simples e confiável.</p>
+    <p>Permite a ampliação da rede sem complicações.</p>
+    <h1>Desvantagem:</h1>
+    <p>Comunicação entre os hosts pode ficar lenta.</p>
+    <p>Problemas difíceis de isolar.</p>
+    <p>Quando se tem um problema, o mesmo é difícil de identificação.</p>
+    <p>Se tiver uma falha no cabo de rede, a rede de sua empresa não irá funcionar.</p>
+    <h1>Estrela</h1>
+    <p>É a topologia mais usada, ela usa o meio físico de par trançado com um centralizador de rede, que se encarrega de fazer a comunicação dos hosts.</p>
+    <h1>Benefícios</h1>
+    <p>Facilita a instalação e configuração dos computadores da rede.</p>
+    <p>A gerência dos equipamentos é centralizado.</p>
+    <p>Quando um computador está com falha, não paralisa a rede.</p>
+    <h1>Desvantagem:</h1>
+    <p>Se o centralizador da rede apresentar falha, ele paralisa a rede.</p>
+    <h1>Anel:</h1>
+    <p>Estes hosts são conectados em série, que se caracteriza um anel, estes são propagados em uma única direção até chegar em seu destino.</p>
+    <h1>Benefícios:</h1>
+    <p>Os hosts conseguem acessar a rede uniformemente.</p>
+    <p>O crescimento dos hosts não altera o desempenho da rede.</p>
+    <h1>Desvantagens:</h1>
+    <p>Se un host falhar, impactará em toda rede; difícil isolar os hosts.</p>
+    <h1>Malha:</h1>
+    <p>É uma das mais utilizadas, pois facilita a instalação e configuração dos hosts.</p>
+    <h1>Benefícios:</h1>
+    <p>Maior abundância e confiabilidade; agilidade para reconhecer falhas na rede.</p>
+    <h1>Desvantagem:</h1>
+    <p>Alto custo de implantar.</p>
+    <h1>Ipv4, Máscara de rede e Getaway</h1>
+    <h1>introdução:</h1>
+    <p>Para obter a comunicação entre os hosts da rede, precisa da parte física para que a rede tenha uma comunicação entre os hosts, tem que ter a configuração lógica.</p>
+    <h1>Ipv4</h1>
+    <p>Tecnologia que permite que nossos hosts trafeguem na internet, e todo host on line tem um código que permite enviar e receber informações de outors hosts conectados na rede.</p>
+    <p>O ipv4 é formado por 04 blocos de 8 bits, os endereços que iniciam 192 168 com 10 ou com 172.16 até 172.31, são poupados para redes locais.</p>
+    <p>O ipv4 transfere endereços de protocolos 32 bits. Sustenta mais ou menos 4,29 bilhões de IPS pelo mundo.</p>
+    <p>O ipv4 suporta 4,29 bilhões de IPS pelo mundo todo.</p>
+    <h1>Máscara de rede</h1>
+    <p>É um bairro que possui várias residências.Os ips que utilizam uma determinada classe, pertence aquela classe.Os ips possuem 4 octetos de binários que tem 32 bits.</p>
+    <p>Classe A: 10.0.0.0 até 10.225.255.255(255.0.0.0)-Utiliza apenas o 1º octeto do IP que fica exclusivo para a máscara de rede e o resto para os hosts.</p>
+    <p>Classe B: 172.16.0.0 até 172.31.255.255(255.255.0.0)-Utiliza os dois 1° octetos do IP que fica exclusivo para a máscara de rede e o resto</p>
+    <img src="topologia.jpg" alt="">
+    <p>Classe C: 192.168.0.0 até 192.168.0.0(255.255.255.0)-Utiliza os três 1º octetos do IP que fica exclusivo para a máscara de rede e o resto para os hosts.</p>
+    <img src="imagem.jpg" alt="">
+    <h1>O que é Getaway?</h1>
+    <p>É um host de rede no qual se tem duas redes. Podemos traduzir como "portão ou portal", é assim que funciona, é um portão que libera o acesso ou não para outras redes.</p>
+    <h1>O que essa tecnologia libera?</h1>
+    <p>A passagem dos dados entre hosts, no qual pode ser instalados políticas de acesso, que vêem a segurança dos dados do computador até a internet.</p>
+    <h1>O que o gateway libera?</h1>
+    <p>O acesso pela internet, por exemplo tendo 04 computadores, com 04 IPS diferentes que estão na mesma máscara de rede, para não ter um modem ou outro dispositivo que conecte a internet em cada computador tem um getaway que compartilha a internet para outra rede em todos os computadores.</p>
+    <h1>Exemplos:</h1>
+    <p>Computador A: IP 192.168.1.100, máscara de rede: 255.255.255.0, getaway: 192.168.1.1</p>
+    <p>Computador B: IP 192.168.1.158, máscara de rede: 255.255.255.0, getaway: 192.168.1.1</p>
+    <p>Computador C: IP 192.168.1.200, máscara de rede: 255.255.255.0, getaway: 192.168.1.1</p>
+    <p>Computador D: IP 192.168.1.254, máscara de rede: 255.255.255.0, getaway: 192.168.1.1</p>
+    <h1>Configurando um cliente na rede</h1>
+    <p>Existem duas formas de fazer, o dinâmico onde só insere o cabo de rede e o protocolo DHCP que inclui IP, Gateway, DNS e Máscara de Rede, e a outra forma é a estática.</p>
+    <img src="cliente.jpg" alt="">
+
+
+
+    
+</body>
+</html>
